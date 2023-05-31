@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js" defer></script>
+    <link href="./style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+        <section class="main_box">
+            <div class="box">
+                <form action="" method="post" onsubmit="alertFunct()">
+                    <div class="choosing_box">
+                        <label for="photo_file" id="label"><i class="fa-regular fa-images fa-2xl" style="color:#8374e6; display:flex; justify-content: center;"></i><br>
+                            Drag & drop <span class="text">images</span>, <br> <span class="text">videos</span>,
+                            or any <span class="text">file</span>
+                        </label>
+                        <input type="file" id="photo_file" onchange="imagePreview(this)" style="display:none"> 
+                    </div>
+                    <div id="card_wrapper">
+                    </div>
+                    <button type="submit" id="submit_btn">Upload</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="https://kit.fontawesome.com/177e91372e.js" crossorigin="anonymous"></script>
+</body>
+</html>
